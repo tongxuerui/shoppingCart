@@ -15,7 +15,7 @@ gulp.task('js', function() {
         // .pipe(rename({suffix: '.min'}))
         // .pipe(uglify())
         // .pipe(gulp.dest(jsDist))
-        .pipe(connect.reload())
+        .pipe(connect.reload());
 });
 
 //定义html任务
@@ -27,7 +27,7 @@ gulp.task('html', function() {
 //定义livereload任务
 gulp.task('connect', function() {
     connect.server({
-         port: 8080,
+        port: 8080,
         livereload: true
     });
 });
